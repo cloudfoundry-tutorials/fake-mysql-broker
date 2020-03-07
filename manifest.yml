@@ -1,0 +1,9 @@
+applications:
+- name: fake-mysql-broker
+  disk_quota: 128M
+  buildpacks:
+  - go_buildpack
+  env:
+    GOPACKAGENAME: github.com/cloudfoundry-tutorials/fake-mysql-broker
+  instances: 1
+  memory: 32M
